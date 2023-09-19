@@ -18,17 +18,18 @@ namespace hidegburokolo
             Console.Write("Írja be a szoba alapfelülete: ");
             double szelesseg = int.Parse(Console.ReadLine());
 
-            double terulet = 2 * (szam1 * szam2) + szam1 + szam2;
-            double teljes = ;
-            double szazalek = ;
-            
+            double terulet = 2 * (szam1 * szam2) * szelesseg + szam1 * szam2;
+            double teljes = terulet * 1.10;
+            double csomag = 1.44;
+            double csomagkell = Math.Ceiling(teljes / csomag);
+            Console.WriteLine($"Ennyi csomagra lesz szükség: {csomagkell} csomag" );
 
-
-            Console.Write("A alapterület: " + szelesseg);
+            /*Console.Write("A alapterület: " + szelesseg);
             Console.WriteLine("Hosszabb oldalfal: ");
             Console.WriteLine("Rövidebb oldalfal: ");
             Console.WriteLine("A teljes: " );
-            Console.WriteLine("Plusz 10%-kal nő: ");
+            Console.WriteLine("Plusz 10%-kal nő: ");*/
+
             Console.ReadKey();
         }
     }
