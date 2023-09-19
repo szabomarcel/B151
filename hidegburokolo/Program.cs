@@ -12,14 +12,23 @@ namespace hidegburokolo
         static void Main(string[] args)
         {
             Console.Write("Írja be a szoba széleségét: ");
-            int szam1 = int.Parse(Console.ReadLine());
-            Console.Write("Írja be a szoba magassága: ");
-            byte szam2 = int.Parse(Console.ReadLine());
+            double szam1 = int.Parse(Console.ReadLine());
             Console.Write("Írja be a szoba hosszúságát: ");
-            int szam3 = int.Parse(Console.ReadLine());
-            Console.Write("Írja be a szoba felületét: ");
-            int szam4 = int.Parse(Console.ReadLine());
-            Console.WriteLine(szam1 + szam3 / szam2 * szam4);
+            double szam2 = int.Parse(Console.ReadLine());
+            Console.Write("Írja be a szoba alapfelülete: ");
+            double szelesseg = int.Parse(Console.ReadLine());
+
+            double terulet = 2 * (szam1 * szam2) + szam1 + szam2;
+            double teljes = ;
+            double szazalek = ;
+            
+
+
+            Console.Write("A alapterület: " + szelesseg);
+            Console.WriteLine("Hosszabb oldalfal: ");
+            Console.WriteLine("Rövidebb oldalfal: ");
+            Console.WriteLine("A teljes: " );
+            Console.WriteLine("Plusz 10%-kal nő: ");
             Console.ReadKey();
         }
     }
